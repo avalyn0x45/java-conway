@@ -1,0 +1,3 @@
+program takes two args: seed and framerate.
+Conway's Game of Life using XTerm control codes.
+probably won't work on windows.
