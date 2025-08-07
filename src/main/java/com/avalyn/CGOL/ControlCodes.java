@@ -8,6 +8,6 @@ public class ControlCodes {
     public static final String reqpos = "\033[6n";
     public static final String resetpos = "\033[u";
     public static String moveTo(Integer x, Integer y) {
-        return String.format("\033["+x+";"+y+"H"); // Java's format syntax is absolutely ridiculous, so no.
+        return "\033["+x+";"+y+"H"; // Java's format syntax is absolutely ridiculous, so no.
     }
 }
