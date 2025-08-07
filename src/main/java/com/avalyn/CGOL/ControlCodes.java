@@ -1,3 +1,5 @@
+// This code is in the public domain. Original author Avalyn Baldyga
+
 package com.avalyn.CGOL;
 
 public class ControlCodes {

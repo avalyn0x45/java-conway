@@ -1,3 +1,5 @@
+// This code is in the public domain. Original author Avalyn Baldyga
+
 package com.avalyn.CGOL;
 import java.util.*;
 import java.nio.charset.Charset;
