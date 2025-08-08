@@ -1,3 +1,3 @@
-program takes two args: seed and framerate.
+program takes two args: [seed or board file] and framerate.
 Conway's Game of Life using XTerm control codes.
 probably won't work on windows.
