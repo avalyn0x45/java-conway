@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
 public class App {
     public static Boolean[][] cells;
     public static Integer seed;
+    public static Integer genc;
     public static void main(String[] args) throws IOException {
         Pattern numeric = Pattern.compile("-?\\d+(\\.\\d+)?");
         
@@ -57,10 +58,18 @@ public class App {
         }
 
         System.out.print(ControlCodes.moveTo(0,0)); 
-
+        
+        genc = 0;
+        Runtime.getRuntime().addShutdownHook(new Thread() {
+        @Override
+            public void run() {
+                System.err.println("Exited after " + genc + " generations.");
+            }   
+        });
         while (true) {
             frame();
             calculate();
+            genc++;
             try {
                 Thread.sleep(Double.valueOf(1000 /  Double.parseDouble(args[1])).longValue());
             } catch (InterruptedException e) {
