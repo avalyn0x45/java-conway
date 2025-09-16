@@ -1,4 +1,4 @@
-program takes two args: [seed or board file] and framerate.
+This program takes two arguments: [seed or board file] and framerate.
 Conway's Game of Life using XTerm control codes.
-probably won't work on windows.
+Untested on Windows.
 https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
